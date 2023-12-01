@@ -96,7 +96,7 @@ int main(void)
                 printf("1. Linear Search\n");
                 printf("2. Binary Search\n");
                 choice = get_int("Enter your choice (1 or 2): ");
-                int guess=get_int("give me a number in between ");
+                int guess=get_int("give me a number in between 1 - %i ", size);
                 if (choice == 1)
                     {
                         int indx = linearSearch(array, guess, size); // call of the search function
@@ -270,3 +270,4 @@ void writeArray(int array[], int size)
     }
     fclose(myThings);
 }
+
